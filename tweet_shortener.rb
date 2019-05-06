@@ -20,3 +20,7 @@ def word_substituter(tweet)
     w
   end.join(" ")
 end
+
+def bulk_tweet_shortner(tweets)
+  tweets.map do |tweet|
+    word_substituter(tweet)
