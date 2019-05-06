@@ -19,6 +19,5 @@ def word_substituter(tweet)
     if dictionary.keys.include?(w)
       w = dictionary[w]
     end
-  end
-  tweet.flatten
+  end.flatten
 end
