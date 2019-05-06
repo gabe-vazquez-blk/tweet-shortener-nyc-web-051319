@@ -16,8 +16,6 @@ def word_substituter(tweet)
   dictionary = dictionary()
   tweet = tweet.split(" ")
   tweet.map do |w|
-    if dictionary.keys.include?(w)
-      w = dictionary[w]
-    end
-  end.flatten
+    w = dictionary[w] if dictionary.keys.include?(w)
+  end.flatten.compact
 end
