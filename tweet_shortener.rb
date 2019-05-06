@@ -12,7 +12,7 @@ def dictionary
   }
 end
 
-def word_substitute(tweet)
+def word_substituter(tweet)
   dictionary = dictionary()
   
 end
