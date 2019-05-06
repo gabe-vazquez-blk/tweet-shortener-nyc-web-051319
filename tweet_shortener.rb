@@ -19,5 +19,5 @@ def word_substituter(tweet)
     w = dictionary[w] if dictionary.keys.include?(w)
     w
   end
-  tweet.flatten
+  tweet.to_s(" ")
 end
