@@ -13,5 +13,6 @@ def dictionary
 end
 
 def word_substitute(tweet)
-  dictionary["hello"]
+  dictionary = dictionary()
+  
 end
